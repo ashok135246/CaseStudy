@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="71.798">
-<testcase classname="Login Feature" name="Login to application and send an Email" time="58.555">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="69.002">
+<testcase classname="Login Feature" name="Login to application validate User Email" time="21.406">
+<system-out><![CDATA[Given Login application present.............................................passed
+When enter valid username "Ashok135"........................................passed
+And enter valid password "Manipallearning@2021".............................passed
+And click on Login validButton..............................................passed
+Then I should see email as "ashok135246@gmail.com"..........................passed
+Then close the driver.......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Feature" name="Login to application validate User Email 2" time="47.34">
 <system-out><![CDATA[Given Login application present.............................................passed
 When enter valid username "Ashok135"........................................passed
 And enter valid password "Manipallearning@2021".............................passed
@@ -16,14 +25,7 @@ From,
  Ashok".....passed
 And click on send button....................................................passed
 Then I should see acknowledgement as "The message has been sent to abc def (abc1234567)".passed
-]]></system-out>
-</testcase>
-<testcase classname="Login Feature" name="To test login with invalid data" time="12.941">
-<system-out><![CDATA[Given Login application present.............................................passed
-When enter invalid username "admin123"......................................passed
-And enter invalid password "admin123".......................................passed
-And click on Login invalidButton............................................passed
-Then login should be unsuccessful with message "Login failed - incorrect login or password.".passed
+Then close the driver.......................................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

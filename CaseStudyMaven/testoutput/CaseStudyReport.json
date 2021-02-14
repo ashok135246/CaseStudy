@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 14268000000,
+              "duration": 10870000000,
               "status": "passed"
             },
             "line": 7,
@@ -24,17 +24,17 @@
         ]
       },
       {
-        "start_timestamp": "2021-02-14T15:11:49.496Z",
-        "line": 24,
-        "name": "Login to application and send an Email",
+        "start_timestamp": "2021-02-14T17:20:33.717Z",
+        "line": 19,
+        "name": "Login to application validate User Email",
         "description": "",
-        "id": "login-feature;login-to-application-and-send-an-email;;2",
+        "id": "login-feature;login-to-application-validate-user-email;;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 194000000,
+              "duration": 171000000,
               "status": "passed"
             },
             "line": 11,
@@ -52,7 +52,7 @@
           },
           {
             "result": {
-              "duration": 269000000,
+              "duration": 255000000,
               "status": "passed"
             },
             "line": 12,
@@ -70,7 +70,7 @@
           },
           {
             "result": {
-              "duration": 5575000000,
+              "duration": 4375000000,
               "status": "passed"
             },
             "line": 13,
@@ -82,7 +82,7 @@
           },
           {
             "result": {
-              "duration": 4194000000,
+              "duration": 4174000000,
               "status": "passed"
             },
             "line": 14,
@@ -100,10 +100,125 @@
           },
           {
             "result": {
-              "duration": 4725000000,
+              "duration": 1430000000,
               "status": "passed"
             },
             "line": 15,
+            "name": "close the driver",
+            "match": {
+              "location": "StepDefinition.Steps.close_the_driver()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginAndValidateEmail"
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 9074000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Login application present",
+            "match": {
+              "location": "StepDefinition.Steps.login_application_present()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-14T17:20:55.150Z",
+        "line": 37,
+        "name": "Login to application validate User Email",
+        "description": "",
+        "id": "login-feature;login-to-application-validate-user-email;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 133000000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "enter valid username \"Ashok135\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Ashok135\"",
+                  "offset": 21
+                }
+              ],
+              "location": "StepDefinition.Steps.enter_valid_username(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 265000000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "enter valid password \"Manipallearning@2021\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Manipallearning@2021\"",
+                  "offset": 21
+                }
+              ],
+              "location": "StepDefinition.Steps.enter_valid_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5009000000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "click on Login validButton",
+            "match": {
+              "location": "StepDefinition.Steps.click_on_login_valid_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4188000000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I should see email as \"ashok135246@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ashok135246@gmail.com\"",
+                  "offset": 22
+                }
+              ],
+              "location": "StepDefinition.Steps.i_should_see_email_as(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5015000000,
+              "status": "passed"
+            },
+            "line": 27,
             "name": "click on Inbox",
             "match": {
               "location": "StepDefinition.Steps.click_on_inbox()"
@@ -112,10 +227,10 @@
           },
           {
             "result": {
-              "duration": 4331000000,
+              "duration": 4128000000,
               "status": "passed"
             },
-            "line": 16,
+            "line": 28,
             "name": "click on Compose Message",
             "match": {
               "location": "StepDefinition.Steps.click_on_compose_message()"
@@ -124,10 +239,10 @@
           },
           {
             "result": {
-              "duration": 2319000000,
+              "duration": 2349000000,
               "status": "passed"
             },
-            "line": 17,
+            "line": 29,
             "name": "enter value for Send to as \"abc1234567\"",
             "match": {
               "arguments": [
@@ -142,10 +257,10 @@
           },
           {
             "result": {
-              "duration": 311000000,
+              "duration": 194000000,
               "status": "passed"
             },
-            "line": 18,
+            "line": 30,
             "name": "enter Subject as \"Hi For Testing\"",
             "match": {
               "arguments": [
@@ -160,10 +275,10 @@
           },
           {
             "result": {
-              "duration": 6511000000,
+              "duration": 6541000000,
               "status": "passed"
             },
-            "line": 19,
+            "line": 31,
             "name": "enter Message as \"Hello Admin,\n This is for testing. \nFrom,\n Ashok\"",
             "match": {
               "arguments": [
@@ -178,10 +293,10 @@
           },
           {
             "result": {
-              "duration": 12325000000,
+              "duration": 7159000000,
               "status": "passed"
             },
-            "line": 20,
+            "line": 32,
             "name": "click on send button",
             "match": {
               "location": "StepDefinition.Steps.click_on_send_button()"
@@ -190,10 +305,10 @@
           },
           {
             "result": {
-              "duration": 3378000000,
+              "duration": 2075000000,
               "status": "passed"
             },
-            "line": 21,
+            "line": 33,
             "name": "I should see acknowledgement as \"The message has been sent to abc def (abc1234567)\"",
             "match": {
               "arguments": [
@@ -205,6 +320,18 @@
               "location": "StepDefinition.Steps.i_should_see_acknowledgement_as(java.lang.String)"
             },
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1194000000,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "close the driver",
+            "match": {
+              "location": "StepDefinition.Steps.close_the_driver()"
+            },
+            "keyword": "Then "
           }
         ],
         "tags": [
@@ -212,113 +339,10 @@
             "name": "@LoginAndComposeEmail"
           }
         ]
-      },
-      {
-        "line": 6,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 9258000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "Login application present",
-            "match": {
-              "location": "StepDefinition.Steps.login_application_present()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-02-14T15:12:48.078Z",
-        "line": 35,
-        "name": "To test login with invalid data",
-        "description": "",
-        "id": "login-feature;to-test-login-with-invalid-data;;2",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 139000000,
-              "status": "passed"
-            },
-            "line": 29,
-            "name": "enter invalid username \"admin123\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"admin123\"",
-                  "offset": 23
-                }
-              ],
-              "location": "StepDefinition.Steps.enter_invalid_username(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 269000000,
-              "status": "passed"
-            },
-            "line": 30,
-            "name": "enter invalid password \"admin123\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"admin123\"",
-                  "offset": 23
-                }
-              ],
-              "location": "StepDefinition.Steps.enter_invalid_password(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1496000000,
-              "status": "passed"
-            },
-            "line": 31,
-            "name": "click on Login invalidButton",
-            "match": {
-              "location": "StepDefinition.Steps.click_on_login_invalid_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1772000000,
-              "status": "passed"
-            },
-            "line": 32,
-            "name": "login should be unsuccessful with message \"Login failed - incorrect login or password.\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Login failed - incorrect login or password.\"",
-                  "offset": 42
-                }
-              ],
-              "location": "StepDefinition.Steps.login_should_be_unsuccessful_with_message(java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@InvalidLogin"
-          }
-        ]
       }
     ],
     "name": "Login Feature",
-    "description": "This Application include\n1)Login to Application and Compose an Email\n2)Login with Invalid Data",
+    "description": "This Application include\n1)Login to Application and validate User Email\n2)Login to Application and Compose an Email",
     "id": "login-feature",
     "keyword": "Feature",
     "uri": "file:src/test/resources/Login/Login.feature",
