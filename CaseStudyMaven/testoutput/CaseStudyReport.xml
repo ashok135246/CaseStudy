@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="71.798">
+<testcase classname="Login Feature" name="Login to application and send an Email" time="58.555">
+<system-out><![CDATA[Given Login application present.............................................passed
+When enter valid username "Ashok135"........................................passed
+And enter valid password "Manipallearning@2021".............................passed
+And click on Login validButton..............................................passed
+Then I should see email as "ashok135246@gmail.com"..........................passed
+And click on Inbox..........................................................passed
+And click on Compose Message................................................passed
+And enter value for Send to as "abc1234567".................................passed
+And enter Subject as "Hi For Testing".......................................passed
+And enter Message as "Hello Admin,
+ This is for testing. 
+From,
+ Ashok".....passed
+And click on send button....................................................passed
+Then I should see acknowledgement as "The message has been sent to abc def (abc1234567)".passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Feature" name="To test login with invalid data" time="12.941">
+<system-out><![CDATA[Given Login application present.............................................passed
+When enter invalid username "admin123"......................................passed
+And enter invalid password "admin123".......................................passed
+And click on Login invalidButton............................................passed
+Then login should be unsuccessful with message "Login failed - incorrect login or password.".passed
+]]></system-out>
+</testcase>
+</testsuite>
