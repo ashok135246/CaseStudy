@@ -94,10 +94,9 @@ public class Steps {
 	
 	@Then("click on send button")
 	public void click_on_send_button() throws InterruptedException {
-		//driver.switchTo().defaultContent();
 		Thread.sleep(5000);		
 		driver.findElement(By.xpath("//button[@id='compose_message_compose']")).click();
-		Thread.sleep(5000);
+		
 	}
 	
 	@Then("I should see acknowledgement as {string}")
@@ -105,29 +104,12 @@ public class Steps {
 		Thread.sleep(2000);	
 	    String Actual=driver.findElement(By.xpath("//*[contains(text(), 'The message has been sent')]")).getText();		
 	    Assert.assertEquals(Actual,string);
-	    driver.quit();
+	    
 	}
 	
-	@When("enter invalid username {string}")
-	public void enter_invalid_username(String string) {
-		driver.findElement(By.xpath("//input[@id='login']")).sendKeys(string);
-	}
-	
-	@When("enter invalid password {string}")
-	public void enter_invalid_password(String string) {
-		driver.findElement(By.xpath("//input[@id='password']")).sendKeys(string);
-	}
-	
-	@When("click on Login invalidButton")
-	public void click_on_login_invalid_button() {
-		driver.findElement(By.xpath("//button[@id='form-login_submitAuth']")).click();
-	}
-	
-	@Then("login should be unsuccessful with message {string}")
-	public void login_should_be_unsuccessful_with_message(String string) {
-		String Actual=driver.findElement(By.xpath("//div[text()='Login failed - incorrect login or password.']")).getText();
-	    Assert.assertEquals(Actual, string);
-	    driver.quit();
+	@Then("close the driver")
+	public void close_the_driver() {
+		driver.quit();
 	}	
 
 }
